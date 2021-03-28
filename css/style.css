@@ -152,10 +152,6 @@ h4{
         column-gap: 2rem;
     }    
 }
-
-.nosotros__contenido{
-
-}
 .nosotros__imagen{
     grid-row: 1 / 2;
     width: 100%;
@@ -164,4 +160,24 @@ h4{
     .nosotros__imagen{
         grid-column: 2 / 3;
     }
+}
+/** Bloques **/
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.bloque{
+    text-align: center;
+}
+.bloque__titulo{
+    margin: 0;
+}
+.bloque__imagen{
+    width: 100%;
 }
